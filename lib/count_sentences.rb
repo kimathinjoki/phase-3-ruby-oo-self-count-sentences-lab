@@ -32,7 +32,7 @@ class String
      # total.uniq.size
 
     total = self.split(/[!.?]/)
-    total.delete(" ")
+    total.delete_if{|str| str == ""}
     total.size
    
 
